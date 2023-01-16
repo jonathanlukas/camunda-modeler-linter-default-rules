@@ -1,10 +1,6 @@
 {
   "extends": [
     "bpmnlint:recommended",
-    "plugin:custom/recommended"
-  ],
-  "rules": {
-    "label-required": "off",
-    "custom/no-manual-task": "warn"
-  }
+    "plugin:camunda/recommended"
+  ]
 }
