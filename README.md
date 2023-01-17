@@ -26,4 +26,4 @@ https://github.com/camunda/bpmnlint-plugin-camunda
 
 > Camunda model guidelines, packed as a bpmnlint plug-in.
 
-Contains more Camunda 8 specific rules in the `rules` folder
+Contains more Camunda 7 specific rules in the `rules` folder
