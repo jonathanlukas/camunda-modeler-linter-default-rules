@@ -1,5 +1,7 @@
 # Default Linter Rules Plugin
 
+[![Compatible with Camunda Modeler version 5.4 and newer](https://img.shields.io/badge/Camunda%20Modeler->=5.4-blue.svg)](https://github.com/camunda/camunda-modeler)
+
 This plugin aims to offer the default rule set the Camunda Modeler had before it had the linter embedded.
 
 For the first overview, have a look into the dependencies part of the [package.json file](package.json)
