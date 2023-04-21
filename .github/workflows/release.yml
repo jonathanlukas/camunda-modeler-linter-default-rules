@@ -23,7 +23,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       packages: write
     steps:
       - uses: actions/checkout@v3
@@ -36,7 +36,6 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
       - run: npm version --git-tag-version false ${{ github.event.release.tag_name }}
-      - uses: stefanzweifel/git-auto-commit-action@v4 
       - run: npm i
       - run: npm run all
       - run: npm publish
