@@ -24,3 +24,6 @@ jobs:
       with:
         default_author: github_actions
         message: Build changed
+        fetch: true
+        pull: '--rebase'
+        push: true
