@@ -338,7 +338,7 @@ function hasConnector(bpmnElement) {
     return false;
   }
 
-  return extensionElements.some(function(extension) {
+  return extensionElements.get('values').some(function(extension) {
     return is(extension, 'camunda:Connector');
   });
 }
