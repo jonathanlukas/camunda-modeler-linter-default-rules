@@ -27,6 +27,6 @@
     "bpmnlint-plugin-camunda": "^0.6.1",
     "npm-run-all": "^4.1.5",
     "webpack": "^5.85.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.3"
   }
 }
