@@ -42,22 +42,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! bpmnlint/rules/no-inclusive-gateway */ "./node_modules/bpmnlint/rules/no-inclusive-gateway.js");
 /* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! bpmnlint/rules/single-blank-start-event */ "./node_modules/bpmnlint/rules/single-blank-start-event.js");
-/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! bpmnlint/rules/single-event-definition */ "./node_modules/bpmnlint/rules/single-event-definition.js");
-/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! bpmnlint/rules/start-event-required */ "./node_modules/bpmnlint/rules/start-event-required.js");
-/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! bpmnlint/rules/sub-process-blank-start-event */ "./node_modules/bpmnlint/rules/sub-process-blank-start-event.js");
-/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! bpmnlint/rules/superfluous-gateway */ "./node_modules/bpmnlint/rules/superfluous-gateway.js");
-/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/avoid-lanes */ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/forking-conditions */ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/implementation */ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! bpmnlint/rules/no-overlapping-elements */ "./node_modules/bpmnlint/rules/no-overlapping-elements.js");
+/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! bpmnlint/rules/single-blank-start-event */ "./node_modules/bpmnlint/rules/single-blank-start-event.js");
+/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! bpmnlint/rules/single-event-definition */ "./node_modules/bpmnlint/rules/single-event-definition.js");
+/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! bpmnlint/rules/start-event-required */ "./node_modules/bpmnlint/rules/start-event-required.js");
+/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! bpmnlint/rules/sub-process-blank-start-event */ "./node_modules/bpmnlint/rules/sub-process-blank-start-event.js");
+/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! bpmnlint/rules/superfluous-gateway */ "./node_modules/bpmnlint/rules/superfluous-gateway.js");
+/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/avoid-lanes */ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/forking-conditions */ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/implementation */ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_22__);
 
 const cache = {};
 
@@ -103,6 +105,7 @@ const rules = {
   "no-implicit-end": "error",
   "no-implicit-start": "error",
   "no-inclusive-gateway": "error",
+  "no-overlapping-elements": "warn",
   "single-blank-start-event": "error",
   "single-event-definition": "error",
   "start-event-required": "error",
@@ -184,35 +187,39 @@ cache['bpmnlint/no-inclusive-gateway'] = (bpmnlint_rules_no_inclusive_gateway__W
 
 
 
-cache['bpmnlint/single-blank-start-event'] = (bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_14___default());
+cache['bpmnlint/no-overlapping-elements'] = (bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_14___default());
 
 
 
-cache['bpmnlint/single-event-definition'] = (bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_15___default());
+cache['bpmnlint/single-blank-start-event'] = (bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_15___default());
 
 
 
-cache['bpmnlint/start-event-required'] = (bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_16___default());
+cache['bpmnlint/single-event-definition'] = (bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_16___default());
 
 
 
-cache['bpmnlint/sub-process-blank-start-event'] = (bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_17___default());
+cache['bpmnlint/start-event-required'] = (bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_17___default());
 
 
 
-cache['bpmnlint/superfluous-gateway'] = (bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_18___default());
+cache['bpmnlint/sub-process-blank-start-event'] = (bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_18___default());
 
 
 
-cache['bpmnlint-plugin-camunda/avoid-lanes'] = (bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_19___default());
+cache['bpmnlint/superfluous-gateway'] = (bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_19___default());
 
 
 
-cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_20___default());
+cache['bpmnlint-plugin-camunda/avoid-lanes'] = (bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_20___default());
 
 
 
-cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_21___default());
+cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_21___default());
+
+
+
+cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_22___default());
 
 /***/ }),
 
@@ -1239,6 +1246,190 @@ module.exports = function() {
 const disallowNodeType = (__webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js").disallowNodeType);
 
 module.exports = disallowNodeType('bpmn:InclusiveGateway');
+
+/***/ }),
+
+/***/ "./node_modules/bpmnlint/rules/no-overlapping-elements.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/bpmnlint/rules/no-overlapping-elements.js ***!
+  \****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+const {
+  is
+} = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
+
+
+/**
+ * Rule that checks if two elements overlap except:
+ * - Boundary events overlap their host
+ * - Child elements overlap / are on top of their parent (e.g., elements within a subProcess)
+ */
+module.exports = function() {
+
+  function check(node, reporter) {
+    if (!is(node, 'bpmn:Definitions')) {
+      return;
+    }
+
+    const rootElements = node.rootElements || [];
+    const elementsToReport = new Set();
+    const elementsOutsideToReport = new Set();
+    const diObjects = getAllDiObjects(node);
+    const processElementsParentDiMap = new Map(); // map with sub/process as key and its parent boundary di object
+
+    rootElements
+      .filter(element => is(element, 'bpmn:Collaboration'))
+      .forEach(collaboration => {
+        const participants = collaboration.participants || [];
+        checkElementsArray(participants, elementsToReport, diObjects);
+
+        participants.forEach(participant => {
+          processElementsParentDiMap.set(participant.processRef, diObjects.get(participant));
+        });
+      });
+
+    rootElements
+      .filter(element => is(element, 'bpmn:Process'))
+      .forEach(process => {
+        const parentDi = processElementsParentDiMap.get(process) || {};
+        checkProcess(process, elementsToReport, elementsOutsideToReport, diObjects, parentDi);
+      });
+
+    // report elements
+    elementsToReport.forEach(element => reporter.report(element.id, 'Element overlaps with other element'));
+    elementsOutsideToReport.forEach(element => reporter.report(element.id, 'Element is outside of parent boundary'));
+  }
+
+  return {
+    check: check
+  };
+};
+
+// helpers /////////////////
+
+/**
+ * Recursively check subprocesses in a process
+ * @param {Object} node Process or SubProcess
+ * @param {Set} elementsToReport
+ * @param {Set} elementsOutsideToReport
+ * @param {Map} diObjects
+ */
+function checkProcess(node, elementsToReport, elementsOutsideToReport, diObjects, parentDi) {
+
+  // check child elements for overlap
+  const flowElements = node.flowElements || [];
+  checkElementsArray(flowElements, elementsToReport, diObjects);
+
+  // check child elements outside parent boundary
+  // TODO: Skipped DataSoreReferences for now
+  flowElements.filter(element => !is(element, 'bpmn:DataStoreReference')).forEach(element => {
+    if (isOutsideParentBoundary(diObjects.get(element).bounds, parentDi.bounds)) {
+      elementsOutsideToReport.add(element);
+    }
+  });
+
+  // check subprocesses
+  const subProcesses = flowElements.filter(element => is(element, 'bpmn:SubProcess'));
+  subProcesses.forEach(subProcess => {
+    const subProcessDi = diObjects.get(subProcess) || {};
+    const subProcessParentBoundary = subProcessDi.isExpanded ? subProcessDi : {};
+    checkProcess(subProcess, elementsToReport, elementsOutsideToReport, diObjects, subProcessParentBoundary);
+  });
+}
+
+/**
+ * @param {Array} elements
+ * @param {Set} elementsToReport
+ */
+function checkElementsArray(elements, elementsToReport, diObjects) {
+  for (let i = 0; i < elements.length - 1; i++) {
+    const element = elements[i];
+    for (let j = i + 1; j < elements.length; j++) {
+      const element2 = elements[j];
+
+      if (!diObjects.has(element) || !diObjects.has(element2)) {
+        continue;
+      }
+
+      // ignore if Boundary events overlap their host
+      // but still check if they overlap other elements
+      if (element.attachedToRef === element2 || element2.attachedToRef === element) {
+        continue;
+      }
+
+      if (isCollision(diObjects.get(element).bounds, diObjects.get(element2).bounds)) {
+        elementsToReport.add(element);
+        elementsToReport.add(element2);
+      }
+    }
+  }
+}
+
+/**
+ * Check if child element is outside of parent boundary
+ */
+function isOutsideParentBoundary(childBounds, parentBounds) {
+  if (!isValidShapeElement(childBounds) || !isValidShapeElement(parentBounds)) {
+    return false;
+  }
+
+  const isTopLeftCornerInside = childBounds.x >= parentBounds.x && childBounds.y >= parentBounds.y;
+  const isBottomRightCornerInside = childBounds.x + childBounds.width <= parentBounds.x + parentBounds.width && childBounds.y + childBounds.height <= parentBounds.y + parentBounds.height;
+  const isInside = isTopLeftCornerInside && isBottomRightCornerInside;
+
+  return !isInside;
+}
+
+/**
+ * Check if two rectangle shapes collides
+ */
+function isCollision(firstBounds, secondBounds) {
+  if (!isValidShapeElement(firstBounds) || !isValidShapeElement(secondBounds)) {
+    return false;
+  }
+
+  const collisionX = firstBounds.x + firstBounds.width >= secondBounds.x && secondBounds.x + secondBounds.width >= firstBounds.x;
+  const collisionY = firstBounds.y + firstBounds.height >= secondBounds.y && secondBounds.y + secondBounds.height >= firstBounds.y;
+
+  // collision on both axis
+  return collisionX && collisionY;
+}
+
+/**
+ * Checks if shape bounds has all necessary values for collision check
+ */
+function isValidShapeElement(bounds) {
+  return !!bounds && is(bounds, 'dc:Bounds') &&
+    typeof (bounds.x) === 'number' &&
+    typeof (bounds.y) === 'number' &&
+    typeof (bounds.width) === 'number' &&
+    typeof (bounds.height) === 'number';
+}
+
+/**
+ * Get all di object as one map object
+ * @param {Object} node bpmn:Definitions
+ * @returns {Map<Object, Object>} map of di objects with element as key
+ */
+function getAllDiObjects(node) {
+  const diObjects = new Map();
+  const diagrams = node.diagrams || [];
+
+  diagrams
+    .filter(diagram => !!diagram.plane)
+    .forEach(diagram => {
+      const planeElements = diagram.plane.planeElement || [];
+      planeElements
+        .filter(planeElement => !!planeElement.bpmnElement)
+        .forEach(planeElement => {
+          diObjects.set(planeElement.bpmnElement, planeElement);
+        });
+    });
+
+  return diObjects;
+}
+
 
 /***/ }),
 
