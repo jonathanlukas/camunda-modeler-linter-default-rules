@@ -570,7 +570,7 @@ module.exports = function() {
   function check(node, reporter) {
 
     if (!isAny(node, [
-      'bpmn:Task',
+      'bpmn:Activity',
       'bpmn:Event'
     ])) {
       return;
@@ -1141,7 +1141,7 @@ module.exports = function() {
   function check(node, reporter) {
 
     if (!isAny(node, [
-      'bpmn:Task',
+      'bpmn:Activity',
       'bpmn:Event'
     ])) {
       return;
