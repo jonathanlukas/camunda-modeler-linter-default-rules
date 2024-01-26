@@ -54,12 +54,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_18__);
 /* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! bpmnlint/rules/superfluous-gateway */ "./node_modules/bpmnlint/rules/superfluous-gateway.js");
 /* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/avoid-lanes */ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/forking-conditions */ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/implementation */ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! bpmnlint/rules/superfluous-termination */ "./node_modules/bpmnlint/rules/superfluous-termination.js");
+/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/avoid-lanes */ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/forking-conditions */ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/implementation */ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_23__);
 
 const cache = {};
 
@@ -111,6 +113,7 @@ const rules = {
   "start-event-required": "error",
   "sub-process-blank-start-event": "error",
   "superfluous-gateway": "warn",
+  "superfluous-termination": "warn",
   "camunda/avoid-lanes": "warn",
   "camunda/forking-conditions": "error",
   "camunda/implementation": "warning"
@@ -211,15 +214,19 @@ cache['bpmnlint/superfluous-gateway'] = (bpmnlint_rules_superfluous_gateway__WEB
 
 
 
-cache['bpmnlint-plugin-camunda/avoid-lanes'] = (bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_20___default());
+cache['bpmnlint/superfluous-termination'] = (bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_20___default());
 
 
 
-cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_21___default());
+cache['bpmnlint-plugin-camunda/avoid-lanes'] = (bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_21___default());
 
 
 
-cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_22___default());
+cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_22___default());
+
+
+
+cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_23___default());
 
 /***/ }),
 
@@ -1650,6 +1657,78 @@ module.exports = function() {
   };
 
 };
+
+/***/ }),
+
+/***/ "./node_modules/bpmnlint/rules/superfluous-termination.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/bpmnlint/rules/superfluous-termination.js ***!
+  \****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+const {
+  is, isAny
+} = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
+
+/**
+ * A rule that checks, whether a gateway has only one source and target.
+ *
+ * Those gateways are superfluous since they don't do anything.
+ */
+module.exports = function() {
+
+  function check(node, reporter) {
+
+    if (!isAny(node, [ 'bpmn:Process', 'bpmn:SubProcess' ])) {
+      return;
+    }
+
+    const flowElements = node.flowElements || [];
+
+    const ends = flowElements.filter(
+      element => is(element, 'bpmn:FlowNode') && (element.outgoing || []).length === 0
+    );
+
+    const terminateEnds = ends.filter(isTerminateEnd);
+
+    if (terminateEnds.length !== 1) {
+
+      // TODO(nikku): only detect basic cases, do not
+      // do any kinds of elaborate flow analysis
+      return;
+    }
+
+    const superfluous = ends.every(
+      (end) => isInterruptingEventSub(end) || isTerminateEnd(end)
+    );
+
+    if (superfluous) {
+
+      for (const node of terminateEnds) {
+        reporter.report(node.id, 'Termination is superfluous.');
+      }
+    }
+  }
+
+  return {
+    check
+  };
+
+};
+
+function isTerminateEnd(element) {
+  return is(element, 'bpmn:EndEvent') && (element.eventDefinitions || []).some(
+    eventDefinition => is(eventDefinition, 'bpmn:TerminateEventDefinition')
+  );
+}
+
+function isInterruptingEventSub(element) {
+  const isEventSub = is(element, 'bpmn:SubProcess') && element.triggeredByEvent;
+
+  return isEventSub && (element.flowElements || []).some(
+    element => is(element, 'bpmn:StartEvent') && element.isInterrupting
+  );
+}
 
 /***/ }),
 
