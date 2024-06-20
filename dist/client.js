@@ -22,48 +22,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bpmnlint/rules/fake-join */ "./node_modules/bpmnlint/rules/fake-join.js");
 /* harmony import */ var bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bpmnlint/rules/label-required */ "./node_modules/bpmnlint/rules/label-required.js");
-/* harmony import */ var bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bpmnlint/rules/link-event */ "./node_modules/bpmnlint/rules/link-event.js");
-/* harmony import */ var bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! bpmnlint/rules/no-bpmndi */ "./node_modules/bpmnlint/rules/no-bpmndi.js");
-/* harmony import */ var bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bpmnlint/rules/no-complex-gateway */ "./node_modules/bpmnlint/rules/no-complex-gateway.js");
-/* harmony import */ var bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! bpmnlint/rules/no-disconnected */ "./node_modules/bpmnlint/rules/no-disconnected.js");
-/* harmony import */ var bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! bpmnlint/rules/no-duplicate-sequence-flows */ "./node_modules/bpmnlint/rules/no-duplicate-sequence-flows.js");
-/* harmony import */ var bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! bpmnlint/rules/no-gateway-join-fork */ "./node_modules/bpmnlint/rules/no-gateway-join-fork.js");
-/* harmony import */ var bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-split */ "./node_modules/bpmnlint/rules/no-implicit-split.js");
-/* harmony import */ var bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-end */ "./node_modules/bpmnlint/rules/no-implicit-end.js");
-/* harmony import */ var bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-start */ "./node_modules/bpmnlint/rules/no-implicit-start.js");
-/* harmony import */ var bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! bpmnlint/rules/no-inclusive-gateway */ "./node_modules/bpmnlint/rules/no-inclusive-gateway.js");
-/* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! bpmnlint/rules/no-overlapping-elements */ "./node_modules/bpmnlint/rules/no-overlapping-elements.js");
-/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! bpmnlint/rules/single-blank-start-event */ "./node_modules/bpmnlint/rules/single-blank-start-event.js");
-/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! bpmnlint/rules/single-event-definition */ "./node_modules/bpmnlint/rules/single-event-definition.js");
-/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! bpmnlint/rules/start-event-required */ "./node_modules/bpmnlint/rules/start-event-required.js");
-/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! bpmnlint/rules/sub-process-blank-start-event */ "./node_modules/bpmnlint/rules/sub-process-blank-start-event.js");
-/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! bpmnlint/rules/superfluous-gateway */ "./node_modules/bpmnlint/rules/superfluous-gateway.js");
-/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! bpmnlint/rules/superfluous-termination */ "./node_modules/bpmnlint/rules/superfluous-termination.js");
-/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/avoid-lanes */ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/forking-conditions */ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/implementation */ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bpmnlint/rules/global */ "./node_modules/bpmnlint/rules/global.js");
+/* harmony import */ var bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bpmnlint/rules/label-required */ "./node_modules/bpmnlint/rules/label-required.js");
+/* harmony import */ var bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! bpmnlint/rules/link-event */ "./node_modules/bpmnlint/rules/link-event.js");
+/* harmony import */ var bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bpmnlint/rules/no-bpmndi */ "./node_modules/bpmnlint/rules/no-bpmndi.js");
+/* harmony import */ var bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! bpmnlint/rules/no-complex-gateway */ "./node_modules/bpmnlint/rules/no-complex-gateway.js");
+/* harmony import */ var bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! bpmnlint/rules/no-disconnected */ "./node_modules/bpmnlint/rules/no-disconnected.js");
+/* harmony import */ var bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! bpmnlint/rules/no-duplicate-sequence-flows */ "./node_modules/bpmnlint/rules/no-duplicate-sequence-flows.js");
+/* harmony import */ var bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! bpmnlint/rules/no-gateway-join-fork */ "./node_modules/bpmnlint/rules/no-gateway-join-fork.js");
+/* harmony import */ var bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-split */ "./node_modules/bpmnlint/rules/no-implicit-split.js");
+/* harmony import */ var bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-end */ "./node_modules/bpmnlint/rules/no-implicit-end.js");
+/* harmony import */ var bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-start */ "./node_modules/bpmnlint/rules/no-implicit-start.js");
+/* harmony import */ var bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! bpmnlint/rules/no-inclusive-gateway */ "./node_modules/bpmnlint/rules/no-inclusive-gateway.js");
+/* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! bpmnlint/rules/no-overlapping-elements */ "./node_modules/bpmnlint/rules/no-overlapping-elements.js");
+/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! bpmnlint/rules/single-blank-start-event */ "./node_modules/bpmnlint/rules/single-blank-start-event.js");
+/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! bpmnlint/rules/single-event-definition */ "./node_modules/bpmnlint/rules/single-event-definition.js");
+/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! bpmnlint/rules/start-event-required */ "./node_modules/bpmnlint/rules/start-event-required.js");
+/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! bpmnlint/rules/sub-process-blank-start-event */ "./node_modules/bpmnlint/rules/sub-process-blank-start-event.js");
+/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! bpmnlint/rules/superfluous-gateway */ "./node_modules/bpmnlint/rules/superfluous-gateway.js");
+/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! bpmnlint/rules/superfluous-termination */ "./node_modules/bpmnlint/rules/superfluous-termination.js");
+/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/avoid-lanes */ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/forking-conditions */ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/implementation */ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_25__);
 
 const cache = {};
 
@@ -99,6 +101,7 @@ const rules = {
   "end-event-required": "error",
   "event-sub-process-typed-start-event": "error",
   "fake-join": "warn",
+  "global": "warn",
   "label-required": "error",
   "link-event": "error",
   "no-bpmndi": "error",
@@ -153,87 +156,91 @@ cache['bpmnlint/fake-join'] = (bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE
 
 
 
-cache['bpmnlint/label-required'] = (bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_4___default());
+cache['bpmnlint/global'] = (bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_4___default());
 
 
 
-cache['bpmnlint/link-event'] = (bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_5___default());
+cache['bpmnlint/label-required'] = (bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_5___default());
 
 
 
-cache['bpmnlint/no-bpmndi'] = (bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_6___default());
+cache['bpmnlint/link-event'] = (bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_6___default());
 
 
 
-cache['bpmnlint/no-complex-gateway'] = (bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_7___default());
+cache['bpmnlint/no-bpmndi'] = (bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_7___default());
 
 
 
-cache['bpmnlint/no-disconnected'] = (bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_8___default());
+cache['bpmnlint/no-complex-gateway'] = (bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_8___default());
 
 
 
-cache['bpmnlint/no-duplicate-sequence-flows'] = (bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_9___default());
+cache['bpmnlint/no-disconnected'] = (bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_9___default());
 
 
 
-cache['bpmnlint/no-gateway-join-fork'] = (bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_10___default());
+cache['bpmnlint/no-duplicate-sequence-flows'] = (bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_10___default());
 
 
 
-cache['bpmnlint/no-implicit-split'] = (bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_11___default());
+cache['bpmnlint/no-gateway-join-fork'] = (bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_11___default());
 
 
 
-cache['bpmnlint/no-implicit-end'] = (bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_12___default());
+cache['bpmnlint/no-implicit-split'] = (bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_12___default());
 
 
 
-cache['bpmnlint/no-implicit-start'] = (bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_13___default());
+cache['bpmnlint/no-implicit-end'] = (bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_13___default());
 
 
 
-cache['bpmnlint/no-inclusive-gateway'] = (bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_14___default());
+cache['bpmnlint/no-implicit-start'] = (bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_14___default());
 
 
 
-cache['bpmnlint/no-overlapping-elements'] = (bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_15___default());
+cache['bpmnlint/no-inclusive-gateway'] = (bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_15___default());
 
 
 
-cache['bpmnlint/single-blank-start-event'] = (bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_16___default());
+cache['bpmnlint/no-overlapping-elements'] = (bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_16___default());
 
 
 
-cache['bpmnlint/single-event-definition'] = (bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_17___default());
+cache['bpmnlint/single-blank-start-event'] = (bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_17___default());
 
 
 
-cache['bpmnlint/start-event-required'] = (bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_18___default());
+cache['bpmnlint/single-event-definition'] = (bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_18___default());
 
 
 
-cache['bpmnlint/sub-process-blank-start-event'] = (bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_19___default());
+cache['bpmnlint/start-event-required'] = (bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_19___default());
 
 
 
-cache['bpmnlint/superfluous-gateway'] = (bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_20___default());
+cache['bpmnlint/sub-process-blank-start-event'] = (bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_20___default());
 
 
 
-cache['bpmnlint/superfluous-termination'] = (bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_21___default());
+cache['bpmnlint/superfluous-gateway'] = (bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_21___default());
 
 
 
-cache['bpmnlint-plugin-camunda/avoid-lanes'] = (bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_22___default());
+cache['bpmnlint/superfluous-termination'] = (bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_22___default());
 
 
 
-cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_23___default());
+cache['bpmnlint-plugin-camunda/avoid-lanes'] = (bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_23___default());
 
 
 
-cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_24___default());
+cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_24___default());
+
+
+
+cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_25___default());
 
 /***/ }),
 
@@ -605,6 +612,132 @@ module.exports = function() {
 
 /***/ }),
 
+/***/ "./node_modules/bpmnlint/rules/global.js":
+/*!***********************************************!*\
+  !*** ./node_modules/bpmnlint/rules/global.js ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+const {
+  isAny, is
+} = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
+
+
+/**
+ * A rule that verifies that global elements are properly used.
+ *
+ * Currently recognized global elements are:
+ *
+ *   * `bpmn:Error`
+ *   * `bpmn:Escalation`
+ *   * `bpmn:Signal`
+ *   * `bpmn:Message`
+ *
+ * For each of these elements proper usage implies:
+ *
+ *   * element must have a name
+ *   * element is used (referenced) from event definitions
+ *   * there exists only a single element per type with a given name
+ */
+module.exports = function() {
+
+  function check(node, reporter) {
+
+    if (!is(node, 'bpmn:Definitions')) {
+      return false;
+    }
+
+    const events = getEvents(node);
+    const eventDefinitions = getEventDefinitions(node);
+
+    events.forEach(event => {
+      if (!hasName(event)) {
+        reporter.report(event.id, 'Element is missing name');
+      }
+
+      if (!isReferenced(event, eventDefinitions)) {
+        reporter.report(event.id, 'Element is unused');
+      }
+
+      if (!isUnique(event, events)) {
+        reporter.report(event.id, 'Element name is not unique');
+      }
+    });
+
+  }
+
+  return {
+    check
+  };
+
+  // helpers /////////////////////////////
+
+  function getEvents(definition) {
+    return definition.rootElements.filter(node => isAny(node, [ 'bpmn:Error', 'bpmn:Escalation', 'bpmn:Message', 'bpmn:Signal' ]));
+  }
+
+  function getEventDefinitions(definition) {
+    const eventDefinitions = [];
+
+    function traverse(element) {
+      if (element.rootElements) {
+        element.rootElements.forEach(traverse);
+      }
+
+      if (element.flowElements) {
+        element.flowElements.forEach(traverse);
+      }
+
+      if (element.eventDefinitions) {
+        element.eventDefinitions.forEach(eventDefinition => eventDefinitions.push(eventDefinition));
+      }
+    }
+
+    traverse(definition);
+    return eventDefinitions;
+  }
+
+  function hasName(event) {
+    return (
+      event.name?.trim() !== ''
+    );
+  }
+
+  function isReferenced(event, eventDefinitions) {
+    if (is(event, 'bpmn:Error')) {
+      return (
+        eventDefinitions.some(node => is(node, 'bpmn:ErrorEventDefinition') && event.id === node.errorRef?.id)
+      );
+    }
+
+    if (is(event, 'bpmn:Escalation')) {
+      return (
+        eventDefinitions.some(node => is(node, 'bpmn:EscalationEventDefinition') && event.id === node.escalationRef?.id)
+      );
+    }
+
+    if (is(event, 'bpmn:Message')) {
+      return (
+        eventDefinitions.some(node => is(node, 'bpmn:MessageEventDefinition') && event.id === node.messageRef?.id)
+      );
+    }
+
+    if (is(event, 'bpmn:Signal')) {
+      return (
+        eventDefinitions.some(node => is(node, 'bpmn:SignalEventDefinition') && event.id === node.signalRef?.id)
+      );
+    }
+  }
+
+  function isUnique(event, events) {
+    return (
+      events.filter(node => is(node, event.$type) && event.name === node.name).length === 1
+    );
+  }
+};
+
+/***/ }),
+
 /***/ "./node_modules/bpmnlint/rules/helper.js":
 /*!***********************************************!*\
   !*** ./node_modules/bpmnlint/rules/helper.js ***!
@@ -734,7 +867,7 @@ function hasCondition(node) {
 
 const {
   groupBy
-} = __webpack_require__(/*! min-dash */ "./node_modules/min-dash/dist/index.esm.js");
+} = __webpack_require__(/*! min-dash */ "./node_modules/min-dash/dist/index.cjs");
 
 const {
   is
@@ -847,7 +980,7 @@ const {
 
 const {
   flatten
-} = __webpack_require__(/*! min-dash */ "./node_modules/min-dash/dist/index.esm.js");
+} = __webpack_require__(/*! min-dash */ "./node_modules/min-dash/dist/index.cjs");
 
 /**
  * A rule that checks that there is no BPMNDI information missing for elements,
@@ -2242,112 +2375,21 @@ function getPluginsDirectory() {
 
 /***/ }),
 
-/***/ "./node_modules/bpmnlint-utils/dist/index.esm.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/bpmnlint-utils/dist/index.esm.js ***!
-  \*******************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ "./node_modules/min-dash/dist/index.cjs":
+/*!**********************************************!*\
+  !*** ./node_modules/min-dash/dist/index.cjs ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   is: () => (/* binding */ is),
-/* harmony export */   isAny: () => (/* binding */ isAny)
-/* harmony export */ });
-/**
- * Checks whether node is of specific bpmn type.
- *
- * @param {ModdleElement} node
- * @param {String} type
- *
- * @return {Boolean}
- */
-function is(node, type) {
-
-  if (type.indexOf(':') === -1) {
-    type = 'bpmn:' + type;
-  }
-
-  return (
-    (typeof node.$instanceOf === 'function')
-      ? node.$instanceOf(type)
-      : node.$type === type
-  );
-}
-
-/**
- * Checks whether node has any of the specified types.
- *
- * @param {ModdleElement} node
- * @param {Array<String>} types
- *
- * @return {Boolean}
- */
-function isAny(node, types) {
-  return types.some(function(type) {
-    return is(node, type);
-  });
-}
 
 
-//# sourceMappingURL=index.esm.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/min-dash/dist/index.esm.js":
-/*!*************************************************!*\
-  !*** ./node_modules/min-dash/dist/index.esm.js ***!
-  \*************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assign: () => (/* binding */ assign),
-/* harmony export */   bind: () => (/* binding */ bind),
-/* harmony export */   debounce: () => (/* binding */ debounce),
-/* harmony export */   ensureArray: () => (/* binding */ ensureArray),
-/* harmony export */   every: () => (/* binding */ every),
-/* harmony export */   filter: () => (/* binding */ filter),
-/* harmony export */   find: () => (/* binding */ find),
-/* harmony export */   findIndex: () => (/* binding */ findIndex),
-/* harmony export */   flatten: () => (/* binding */ flatten),
-/* harmony export */   forEach: () => (/* binding */ forEach),
-/* harmony export */   get: () => (/* binding */ get),
-/* harmony export */   groupBy: () => (/* binding */ groupBy),
-/* harmony export */   has: () => (/* binding */ has),
-/* harmony export */   isArray: () => (/* binding */ isArray),
-/* harmony export */   isDefined: () => (/* binding */ isDefined),
-/* harmony export */   isFunction: () => (/* binding */ isFunction),
-/* harmony export */   isNil: () => (/* binding */ isNil),
-/* harmony export */   isNumber: () => (/* binding */ isNumber),
-/* harmony export */   isObject: () => (/* binding */ isObject),
-/* harmony export */   isString: () => (/* binding */ isString),
-/* harmony export */   isUndefined: () => (/* binding */ isUndefined),
-/* harmony export */   keys: () => (/* binding */ keys),
-/* harmony export */   map: () => (/* binding */ map),
-/* harmony export */   matchPattern: () => (/* binding */ matchPattern),
-/* harmony export */   merge: () => (/* binding */ merge),
-/* harmony export */   omit: () => (/* binding */ omit),
-/* harmony export */   pick: () => (/* binding */ pick),
-/* harmony export */   reduce: () => (/* binding */ reduce),
-/* harmony export */   set: () => (/* binding */ set),
-/* harmony export */   size: () => (/* binding */ size),
-/* harmony export */   some: () => (/* binding */ some),
-/* harmony export */   sortBy: () => (/* binding */ sortBy),
-/* harmony export */   throttle: () => (/* binding */ throttle),
-/* harmony export */   unionBy: () => (/* binding */ unionBy),
-/* harmony export */   uniqueBy: () => (/* binding */ uniqueBy),
-/* harmony export */   values: () => (/* binding */ values),
-/* harmony export */   without: () => (/* binding */ without)
-/* harmony export */ });
 /**
  * Flatten array, one level deep.
  *
  * @template T
  *
- * @param {T[][]} arr
+ * @param {T[][] | T[] | null} [arr]
  *
  * @return {T[]}
  */
@@ -3213,7 +3255,96 @@ function merge(target, ...sources) {
   return target;
 }
 
+exports.assign = assign;
+exports.bind = bind;
+exports.debounce = debounce;
+exports.ensureArray = ensureArray;
+exports.every = every;
+exports.filter = filter;
+exports.find = find;
+exports.findIndex = findIndex;
+exports.flatten = flatten;
+exports.forEach = forEach;
+exports.get = get;
+exports.groupBy = groupBy;
+exports.has = has;
+exports.isArray = isArray;
+exports.isDefined = isDefined;
+exports.isFunction = isFunction;
+exports.isNil = isNil;
+exports.isNumber = isNumber;
+exports.isObject = isObject;
+exports.isString = isString;
+exports.isUndefined = isUndefined;
+exports.keys = keys;
+exports.map = map;
+exports.matchPattern = matchPattern;
+exports.merge = merge;
+exports.omit = omit;
+exports.pick = pick;
+exports.reduce = reduce;
+exports.set = set;
+exports.size = size;
+exports.some = some;
+exports.sortBy = sortBy;
+exports.throttle = throttle;
+exports.unionBy = unionBy;
+exports.uniqueBy = uniqueBy;
+exports.values = values;
+exports.without = without;
 
+
+/***/ }),
+
+/***/ "./node_modules/bpmnlint-utils/dist/index.esm.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/bpmnlint-utils/dist/index.esm.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   is: () => (/* binding */ is),
+/* harmony export */   isAny: () => (/* binding */ isAny)
+/* harmony export */ });
+/**
+ * Checks whether node is of specific bpmn type.
+ *
+ * @param {ModdleElement} node
+ * @param {String} type
+ *
+ * @return {Boolean}
+ */
+function is(node, type) {
+
+  if (type.indexOf(':') === -1) {
+    type = 'bpmn:' + type;
+  }
+
+  return (
+    (typeof node.$instanceOf === 'function')
+      ? node.$instanceOf(type)
+      : node.$type === type
+  );
+}
+
+/**
+ * Checks whether node has any of the specified types.
+ *
+ * @param {ModdleElement} node
+ * @param {Array<String>} types
+ *
+ * @return {Boolean}
+ */
+function isAny(node, types) {
+  return types.some(function(type) {
+    return is(node, type);
+  });
+}
+
+
+//# sourceMappingURL=index.esm.js.map
 
 
 /***/ })
