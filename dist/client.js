@@ -1128,13 +1128,13 @@ function getAllBpmnElements(rootElements) {
  */
 function getAllDiBpmnReferences(definitionsNode) {
   return flatten(
-    definitionsNode.diagrams.map((diagram) => {
+    definitionsNode.get('diagrams').map((diagram) => {
 
       const diElements = diagram.plane.planeElement || [];
 
       return diElements.map((element) => {
 
-        return element.bpmnElement.id;
+        return element.bpmnElement?.id;
       });
     })
   );
@@ -1712,7 +1712,15 @@ function checkElementsArray(elements, elementsToReport, diObjects) {
         continue;
       }
 
-      if (isCollision(diObjects.get(element).bounds, diObjects.get(element2).bounds)) {
+      const bounds1 = diObjects.get(element)?.bounds;
+      const bounds2 = diObjects.get(element2)?.bounds;
+
+      // ignore if an element doesn't have bounds
+      if (!bounds1 || !bounds2) {
+        continue;
+      }
+
+      if (isCollision(bounds1, bounds2)) {
         elementsToReport.add(element);
         elementsToReport.add(element2);
       }
@@ -2556,7 +2564,7 @@ function ensureArray(obj) {
  * @return {Boolean}
  */
 function has(target, key) {
-  return nativeHasOwnProperty.call(target, key);
+  return !isNil(target) && nativeHasOwnProperty.call(target, key);
 }
 
 /**
@@ -2645,7 +2653,7 @@ function find(collection, matcher) {
  * @param {Collection<T>} collection
  * @param {Matcher<T>} matcher
  *
- * @return {number}
+ * @return {number | string | undefined}
  */
 function findIndex(collection, matcher) {
 
