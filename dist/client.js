@@ -14,58 +14,60 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   resolver: () => (/* binding */ resolver)
 /* harmony export */ });
-/* harmony import */ var bpmnlint_rules_conditional_flows__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bpmnlint/rules/conditional-flows */ "./node_modules/bpmnlint/rules/conditional-flows.js");
-/* harmony import */ var bpmnlint_rules_conditional_flows__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_conditional_flows__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var bpmnlint_rules_end_event_required__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bpmnlint/rules/end-event-required */ "./node_modules/bpmnlint/rules/end-event-required.js");
-/* harmony import */ var bpmnlint_rules_end_event_required__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_end_event_required__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bpmnlint/rules/event-sub-process-typed-start-event */ "./node_modules/bpmnlint/rules/event-sub-process-typed-start-event.js");
-/* harmony import */ var bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bpmnlint/rules/fake-join */ "./node_modules/bpmnlint/rules/fake-join.js");
-/* harmony import */ var bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bpmnlint/rules/global */ "./node_modules/bpmnlint/rules/global.js");
-/* harmony import */ var bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bpmnlint/rules/label-required */ "./node_modules/bpmnlint/rules/label-required.js");
-/* harmony import */ var bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! bpmnlint/rules/link-event */ "./node_modules/bpmnlint/rules/link-event.js");
-/* harmony import */ var bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bpmnlint/rules/no-bpmndi */ "./node_modules/bpmnlint/rules/no-bpmndi.js");
-/* harmony import */ var bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! bpmnlint/rules/no-complex-gateway */ "./node_modules/bpmnlint/rules/no-complex-gateway.js");
-/* harmony import */ var bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! bpmnlint/rules/no-disconnected */ "./node_modules/bpmnlint/rules/no-disconnected.js");
-/* harmony import */ var bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! bpmnlint/rules/no-duplicate-sequence-flows */ "./node_modules/bpmnlint/rules/no-duplicate-sequence-flows.js");
-/* harmony import */ var bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! bpmnlint/rules/no-gateway-join-fork */ "./node_modules/bpmnlint/rules/no-gateway-join-fork.js");
-/* harmony import */ var bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-split */ "./node_modules/bpmnlint/rules/no-implicit-split.js");
-/* harmony import */ var bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-end */ "./node_modules/bpmnlint/rules/no-implicit-end.js");
-/* harmony import */ var bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-start */ "./node_modules/bpmnlint/rules/no-implicit-start.js");
-/* harmony import */ var bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! bpmnlint/rules/no-inclusive-gateway */ "./node_modules/bpmnlint/rules/no-inclusive-gateway.js");
-/* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! bpmnlint/rules/no-overlapping-elements */ "./node_modules/bpmnlint/rules/no-overlapping-elements.js");
-/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! bpmnlint/rules/single-blank-start-event */ "./node_modules/bpmnlint/rules/single-blank-start-event.js");
-/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! bpmnlint/rules/single-event-definition */ "./node_modules/bpmnlint/rules/single-event-definition.js");
-/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! bpmnlint/rules/start-event-required */ "./node_modules/bpmnlint/rules/start-event-required.js");
-/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! bpmnlint/rules/sub-process-blank-start-event */ "./node_modules/bpmnlint/rules/sub-process-blank-start-event.js");
-/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! bpmnlint/rules/superfluous-gateway */ "./node_modules/bpmnlint/rules/superfluous-gateway.js");
-/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! bpmnlint/rules/superfluous-termination */ "./node_modules/bpmnlint/rules/superfluous-termination.js");
-/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/avoid-lanes */ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/forking-conditions */ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_24__);
-/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/implementation */ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js");
-/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var bpmnlint_rules_ad_hoc_sub_process__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bpmnlint/rules/ad-hoc-sub-process */ "./node_modules/bpmnlint/rules/ad-hoc-sub-process.js");
+/* harmony import */ var bpmnlint_rules_ad_hoc_sub_process__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_ad_hoc_sub_process__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var bpmnlint_rules_conditional_flows__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bpmnlint/rules/conditional-flows */ "./node_modules/bpmnlint/rules/conditional-flows.js");
+/* harmony import */ var bpmnlint_rules_conditional_flows__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_conditional_flows__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var bpmnlint_rules_end_event_required__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bpmnlint/rules/end-event-required */ "./node_modules/bpmnlint/rules/end-event-required.js");
+/* harmony import */ var bpmnlint_rules_end_event_required__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_end_event_required__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bpmnlint/rules/event-sub-process-typed-start-event */ "./node_modules/bpmnlint/rules/event-sub-process-typed-start-event.js");
+/* harmony import */ var bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bpmnlint/rules/fake-join */ "./node_modules/bpmnlint/rules/fake-join.js");
+/* harmony import */ var bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bpmnlint/rules/global */ "./node_modules/bpmnlint/rules/global.js");
+/* harmony import */ var bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! bpmnlint/rules/label-required */ "./node_modules/bpmnlint/rules/label-required.js");
+/* harmony import */ var bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bpmnlint/rules/link-event */ "./node_modules/bpmnlint/rules/link-event.js");
+/* harmony import */ var bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! bpmnlint/rules/no-bpmndi */ "./node_modules/bpmnlint/rules/no-bpmndi.js");
+/* harmony import */ var bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! bpmnlint/rules/no-complex-gateway */ "./node_modules/bpmnlint/rules/no-complex-gateway.js");
+/* harmony import */ var bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! bpmnlint/rules/no-disconnected */ "./node_modules/bpmnlint/rules/no-disconnected.js");
+/* harmony import */ var bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! bpmnlint/rules/no-duplicate-sequence-flows */ "./node_modules/bpmnlint/rules/no-duplicate-sequence-flows.js");
+/* harmony import */ var bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! bpmnlint/rules/no-gateway-join-fork */ "./node_modules/bpmnlint/rules/no-gateway-join-fork.js");
+/* harmony import */ var bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-split */ "./node_modules/bpmnlint/rules/no-implicit-split.js");
+/* harmony import */ var bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-end */ "./node_modules/bpmnlint/rules/no-implicit-end.js");
+/* harmony import */ var bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! bpmnlint/rules/no-implicit-start */ "./node_modules/bpmnlint/rules/no-implicit-start.js");
+/* harmony import */ var bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! bpmnlint/rules/no-inclusive-gateway */ "./node_modules/bpmnlint/rules/no-inclusive-gateway.js");
+/* harmony import */ var bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! bpmnlint/rules/no-overlapping-elements */ "./node_modules/bpmnlint/rules/no-overlapping-elements.js");
+/* harmony import */ var bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! bpmnlint/rules/single-blank-start-event */ "./node_modules/bpmnlint/rules/single-blank-start-event.js");
+/* harmony import */ var bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! bpmnlint/rules/single-event-definition */ "./node_modules/bpmnlint/rules/single-event-definition.js");
+/* harmony import */ var bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! bpmnlint/rules/start-event-required */ "./node_modules/bpmnlint/rules/start-event-required.js");
+/* harmony import */ var bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! bpmnlint/rules/sub-process-blank-start-event */ "./node_modules/bpmnlint/rules/sub-process-blank-start-event.js");
+/* harmony import */ var bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! bpmnlint/rules/superfluous-gateway */ "./node_modules/bpmnlint/rules/superfluous-gateway.js");
+/* harmony import */ var bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! bpmnlint/rules/superfluous-termination */ "./node_modules/bpmnlint/rules/superfluous-termination.js");
+/* harmony import */ var bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/avoid-lanes */ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/forking-conditions */ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! bpmnlint-plugin-camunda/rules/implementation */ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js");
+/* harmony import */ var bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_26__);
 
 const cache = {};
 
@@ -97,6 +99,7 @@ Resolver.prototype.resolveConfig = function(pkg, configName) {
 const resolver = new Resolver();
 
 const rules = {
+  "ad-hoc-sub-process": "error",
   "conditional-flows": "error",
   "end-event-required": "error",
   "event-sub-process-typed-start-event": "error",
@@ -140,107 +143,111 @@ const bundle = {
 
 
 
-cache['bpmnlint/conditional-flows'] = (bpmnlint_rules_conditional_flows__WEBPACK_IMPORTED_MODULE_0___default());
+cache['bpmnlint/ad-hoc-sub-process'] = (bpmnlint_rules_ad_hoc_sub_process__WEBPACK_IMPORTED_MODULE_0___default());
 
 
 
-cache['bpmnlint/end-event-required'] = (bpmnlint_rules_end_event_required__WEBPACK_IMPORTED_MODULE_1___default());
+cache['bpmnlint/conditional-flows'] = (bpmnlint_rules_conditional_flows__WEBPACK_IMPORTED_MODULE_1___default());
 
 
 
-cache['bpmnlint/event-sub-process-typed-start-event'] = (bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_2___default());
+cache['bpmnlint/end-event-required'] = (bpmnlint_rules_end_event_required__WEBPACK_IMPORTED_MODULE_2___default());
 
 
 
-cache['bpmnlint/fake-join'] = (bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_3___default());
+cache['bpmnlint/event-sub-process-typed-start-event'] = (bpmnlint_rules_event_sub_process_typed_start_event__WEBPACK_IMPORTED_MODULE_3___default());
 
 
 
-cache['bpmnlint/global'] = (bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_4___default());
+cache['bpmnlint/fake-join'] = (bpmnlint_rules_fake_join__WEBPACK_IMPORTED_MODULE_4___default());
 
 
 
-cache['bpmnlint/label-required'] = (bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_5___default());
+cache['bpmnlint/global'] = (bpmnlint_rules_global__WEBPACK_IMPORTED_MODULE_5___default());
 
 
 
-cache['bpmnlint/link-event'] = (bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_6___default());
+cache['bpmnlint/label-required'] = (bpmnlint_rules_label_required__WEBPACK_IMPORTED_MODULE_6___default());
 
 
 
-cache['bpmnlint/no-bpmndi'] = (bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_7___default());
+cache['bpmnlint/link-event'] = (bpmnlint_rules_link_event__WEBPACK_IMPORTED_MODULE_7___default());
 
 
 
-cache['bpmnlint/no-complex-gateway'] = (bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_8___default());
+cache['bpmnlint/no-bpmndi'] = (bpmnlint_rules_no_bpmndi__WEBPACK_IMPORTED_MODULE_8___default());
 
 
 
-cache['bpmnlint/no-disconnected'] = (bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_9___default());
+cache['bpmnlint/no-complex-gateway'] = (bpmnlint_rules_no_complex_gateway__WEBPACK_IMPORTED_MODULE_9___default());
 
 
 
-cache['bpmnlint/no-duplicate-sequence-flows'] = (bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_10___default());
+cache['bpmnlint/no-disconnected'] = (bpmnlint_rules_no_disconnected__WEBPACK_IMPORTED_MODULE_10___default());
 
 
 
-cache['bpmnlint/no-gateway-join-fork'] = (bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_11___default());
+cache['bpmnlint/no-duplicate-sequence-flows'] = (bpmnlint_rules_no_duplicate_sequence_flows__WEBPACK_IMPORTED_MODULE_11___default());
 
 
 
-cache['bpmnlint/no-implicit-split'] = (bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_12___default());
+cache['bpmnlint/no-gateway-join-fork'] = (bpmnlint_rules_no_gateway_join_fork__WEBPACK_IMPORTED_MODULE_12___default());
 
 
 
-cache['bpmnlint/no-implicit-end'] = (bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_13___default());
+cache['bpmnlint/no-implicit-split'] = (bpmnlint_rules_no_implicit_split__WEBPACK_IMPORTED_MODULE_13___default());
 
 
 
-cache['bpmnlint/no-implicit-start'] = (bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_14___default());
+cache['bpmnlint/no-implicit-end'] = (bpmnlint_rules_no_implicit_end__WEBPACK_IMPORTED_MODULE_14___default());
 
 
 
-cache['bpmnlint/no-inclusive-gateway'] = (bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_15___default());
+cache['bpmnlint/no-implicit-start'] = (bpmnlint_rules_no_implicit_start__WEBPACK_IMPORTED_MODULE_15___default());
 
 
 
-cache['bpmnlint/no-overlapping-elements'] = (bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_16___default());
+cache['bpmnlint/no-inclusive-gateway'] = (bpmnlint_rules_no_inclusive_gateway__WEBPACK_IMPORTED_MODULE_16___default());
 
 
 
-cache['bpmnlint/single-blank-start-event'] = (bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_17___default());
+cache['bpmnlint/no-overlapping-elements'] = (bpmnlint_rules_no_overlapping_elements__WEBPACK_IMPORTED_MODULE_17___default());
 
 
 
-cache['bpmnlint/single-event-definition'] = (bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_18___default());
+cache['bpmnlint/single-blank-start-event'] = (bpmnlint_rules_single_blank_start_event__WEBPACK_IMPORTED_MODULE_18___default());
 
 
 
-cache['bpmnlint/start-event-required'] = (bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_19___default());
+cache['bpmnlint/single-event-definition'] = (bpmnlint_rules_single_event_definition__WEBPACK_IMPORTED_MODULE_19___default());
 
 
 
-cache['bpmnlint/sub-process-blank-start-event'] = (bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_20___default());
+cache['bpmnlint/start-event-required'] = (bpmnlint_rules_start_event_required__WEBPACK_IMPORTED_MODULE_20___default());
 
 
 
-cache['bpmnlint/superfluous-gateway'] = (bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_21___default());
+cache['bpmnlint/sub-process-blank-start-event'] = (bpmnlint_rules_sub_process_blank_start_event__WEBPACK_IMPORTED_MODULE_21___default());
 
 
 
-cache['bpmnlint/superfluous-termination'] = (bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_22___default());
+cache['bpmnlint/superfluous-gateway'] = (bpmnlint_rules_superfluous_gateway__WEBPACK_IMPORTED_MODULE_22___default());
 
 
 
-cache['bpmnlint-plugin-camunda/avoid-lanes'] = (bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_23___default());
+cache['bpmnlint/superfluous-termination'] = (bpmnlint_rules_superfluous_termination__WEBPACK_IMPORTED_MODULE_23___default());
 
 
 
-cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_24___default());
+cache['bpmnlint-plugin-camunda/avoid-lanes'] = (bpmnlint_plugin_camunda_rules_avoid_lanes__WEBPACK_IMPORTED_MODULE_24___default());
 
 
 
-cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_25___default());
+cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_rules_forking_conditions__WEBPACK_IMPORTED_MODULE_25___default());
+
+
+
+cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_26___default());
 
 /***/ }),
 
@@ -466,6 +473,60 @@ function isAny(node, types) {
 
 //# sourceMappingURL=index.esm.js.map
 
+
+/***/ }),
+
+/***/ "./node_modules/bpmnlint/rules/ad-hoc-sub-process.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/bpmnlint/rules/ad-hoc-sub-process.js ***!
+  \***********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+const {
+  is,
+  isAny
+} = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
+
+/**
+ * A rule that ensures that an Ad Hoc Sub Process is valid according to the BPMN spec:
+ *
+ * - No start or end events
+ * - Every intermediate event has an outgoing sequence flow
+ */
+module.exports = function() {
+
+  function check(node, reporter) {
+
+    if (!is(node, 'bpmn:AdHocSubProcess')) {
+      return;
+    }
+
+    const flowElements = node.flowElements || [];
+
+    flowElements.forEach(function(flowElement) {
+
+      if (is(flowElement, 'bpmn:StartEvent')) {
+        reporter.report(flowElement.id, 'A <Start Event> is not allowed in <Ad Hoc Sub Process>');
+      }
+
+      if (is(flowElement, 'bpmn:EndEvent')) {
+        reporter.report(flowElement.id, 'An <End Event> is not allowed in <Ad Hoc Sub Process>');
+      }
+
+      if (isAny(flowElement, [ 'bpmn:IntermediateCatchEvent', 'bpmn:IntermediateThrowEvent' ])) {
+        if (!flowElement.outgoing || flowElement.outgoing.length === 0) {
+          reporter.report(flowElement.id, 'An intermediate event inside <Ad Hoc Sub Process> must have an outgoing sequence flow');
+        }
+      }
+
+    });
+  }
+
+  return {
+    check
+  };
+
+};
 
 /***/ }),
 
