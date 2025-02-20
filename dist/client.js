@@ -487,11 +487,18 @@ const {
   isAny
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
+
 /**
  * A rule that ensures that an Ad Hoc Sub Process is valid according to the BPMN spec:
  *
  * - No start or end events
  * - Every intermediate event has an outgoing sequence flow
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -522,9 +529,9 @@ module.exports = function() {
     });
   }
 
-  return {
+  return annotateRule('ad-hoc-sub-process', {
     check
-  };
+  });
 
 };
 
@@ -534,12 +541,19 @@ module.exports = function() {
 /*!**********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/conditional-flows.js ***!
   \**********************************************************/
-/***/ ((module) => {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that checks that sequence flows outgoing from a
  * conditional forking gateway or activity are
  * either default flows _or_ have a condition attached
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -563,9 +577,9 @@ module.exports = function() {
     });
   }
 
-  return {
+  return annotateRule('conditional-flows', {
     check
-  };
+  });
 
 };
 
@@ -601,9 +615,15 @@ const {
   isAny
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that checks the presence of an end event per scope.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -631,7 +651,9 @@ module.exports = function() {
     }
   }
 
-  return { check };
+  return annotateRule('end-event-required', {
+    check
+  });
 };
 
 
@@ -647,9 +669,16 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
+
 /**
  * A rule that checks that start events inside an event sub-process
  * are typed.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -675,9 +704,9 @@ module.exports = function() {
     });
   }
 
-  return {
+  return annotateRule('event-sub-process-typed-start-event', {
     check
-  };
+  });
 
 };
 
@@ -693,12 +722,19 @@ const {
   isAny
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
+
 /**
  * A rule that checks that no fake join is modeled by attempting
  * to give a task or event join semantics.
  *
  * Users should model a parallel joining gateway
  * to achieve the desired behavior.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -718,9 +754,9 @@ module.exports = function() {
     }
   }
 
-  return {
+  return annotateRule('fake-join', {
     check
-  };
+  });
 
 };
 
@@ -736,6 +772,10 @@ const {
   is,
   isAny
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
+
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
 
 
 /**
@@ -753,6 +793,8 @@ const {
  *   * element must have a name
  *   * element is referenced by at least one element
  *   * there exists only a single element per type with a given name
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -782,9 +824,9 @@ module.exports = function() {
 
   }
 
-  return {
+  return annotateRule('global', {
     check
-  };
+  });
 
   // helpers /////////////////////////////
 
@@ -886,14 +928,25 @@ const {
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
 /**
+ * @typedef { import('../lib/types.js').ModdleElement } ModdleElement
+ *
+ * @typedef { import('../lib/types.js').RuleFactory } RuleFactory
+ * @typedef { import('../lib/types.js').RuleDefinition } RuleDefinition
+ */
+
+
+/**
  * Create a checker that disallows the given element type.
  *
- * @param {String} type
+ * @param { string } type
  *
- * @return {Function} ruleImpl
+ * @return { RuleFactory } ruleFactory
  */
-function disallowNodeType(type) {
+function disallowNodeType(type, ruleName) {
 
+  /**
+   * @type { RuleFactory }
+   */
   return function() {
 
     function check(node, reporter) {
@@ -903,9 +956,9 @@ function disallowNodeType(type) {
       }
     }
 
-    return {
+    return annotateRule(ruleName, {
       check
-    };
+    });
 
   };
 
@@ -913,16 +966,15 @@ function disallowNodeType(type) {
 
 module.exports.disallowNodeType = disallowNodeType;
 
+
 /**
  * Find a parent for the given element
  *
- * @param {ModdleElement} node
+ * @param { ModdleElement } node
+ * @param { string } type
  *
- *  @param {String} type
- *
- * @return {ModdleElement} element
+ * @return { ModdleElement } element
  */
-
 function findParent(node, type) {
   if (!node) {
     return null;
@@ -943,6 +995,43 @@ function findParent(node, type) {
 
 module.exports.findParent = findParent;
 
+
+const documentationBaseUrl = 'https://github.com/bpmn-io/bpmnlint/blob/main/docs/rules';
+
+/**
+ * Annotate a rule with core information, such as the documentation url.
+ *
+ * @param {string} ruleName
+ * @param {RuleDefinition} options
+ *
+ * @return {RuleDefinition}
+ */
+function annotateRule(ruleName, options) {
+
+  const {
+    meta: {
+      documentation = {},
+      ...restMeta
+    } = {},
+    ...restOptions
+  } = options;
+
+  const documentationUrl = `${documentationBaseUrl}/${ruleName}.md`;
+
+  return {
+    meta: {
+      documentation: {
+        url: documentationUrl,
+        ...documentation
+      },
+      ...restMeta
+    },
+    ...restOptions
+  };
+}
+
+module.exports.annotateRule = annotateRule;
+
 /***/ }),
 
 /***/ "./node_modules/bpmnlint/rules/label-required.js":
@@ -956,9 +1045,15 @@ const {
   isAny
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that checks the presence of a label.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1004,7 +1099,9 @@ module.exports = function() {
     }
   }
 
-  return { check };
+  return annotateRule('label-required', {
+    check
+  });
 };
 
 
@@ -1036,6 +1133,10 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that verifies that link events are properly used.
@@ -1048,6 +1149,7 @@ const {
  *     with a given name, per scope
  *   * link events have a name
  *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1100,9 +1202,9 @@ module.exports = function() {
 
   }
 
-  return {
+  return annotateRule('link-event', {
     check
-  };
+  });
 };
 
 
@@ -1145,9 +1247,20 @@ const {
   flatten
 } = __webpack_require__(/*! min-dash */ "./node_modules/min-dash/dist/index.cjs");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
+/**
+ * @typedef { import('../lib/types.js').ModdleElement } ModdleElement
+ */
+
+
 /**
  * A rule that checks that there is no BPMNDI information missing for elements,
  * which require BPMNDI.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1174,9 +1287,9 @@ module.exports = function() {
     });
   }
 
-  return {
+  return annotateRule('no-bpmndi', {
     check
-  };
+  });
 
 };
 
@@ -1186,11 +1299,12 @@ module.exports = function() {
 /**
  * Get all BPMN elements within a bpmn:Definitions node
  *
- * @param {array<ModdleElement>} rootElements - An array of Moddle rootElements
- * @return {array<Object>} A flat array with all BPMN elements, each represented with { id: elementId, $type: elementType }
+ * @param { ModdleElement[] } rootElements - An array of Moddle rootElements
  *
+ * @return { { id: string, $type: string }[] } A flat array with all BPMN elements, each represented with { id: elementId, $type: elementType }
  */
 function getAllBpmnElements(rootElements) {
+
   return flatten(rootElements.map((rootElement) => {
     const laneSet =
       rootElement.laneSets && rootElement.laneSets[0] || rootElement.childLaneSet;
@@ -1205,7 +1319,7 @@ function getAllBpmnElements(rootElements) {
     // * childLaneSets
     // * nested childLaneSets
     // * messageFlows
-    const elements = flatten([].concat(
+    const elements = flatten([
       rootElement.flowElements || [],
       (rootElement.flowElements && getAllBpmnElements(rootElement.flowElements.filter(hasFlowElements))) || [],
       rootElement.participants || [],
@@ -1213,7 +1327,7 @@ function getAllBpmnElements(rootElements) {
       laneSet && laneSet.lanes || [],
       laneSet && laneSet.lanes && getAllBpmnElements(laneSet.lanes.filter(hasChildLaneSet)) || [],
       rootElement.messageFlows || []
-    ));
+    ]);
 
     if (elements.length > 0) {
       return elements.map((element) => {
@@ -1235,10 +1349,10 @@ function getAllBpmnElements(rootElements) {
  * Get all BPMN elements within a bpmn:Definitions node
  *
  * @param {ModdleElement} definitionsNode - A moddleElement representing the
- * bpmn:Definitions element
- * @return {array<String>} A flat array with all BPMNDI element ids part of
- * this bpmn:Definitions node
+ *   bpmn:Definitions element
  *
+ * @return {string[]} ids of all BPMNDI element part of
+ *   this bpmn:Definitions node
  */
 function getAllDiBpmnReferences(definitionsNode) {
   return flatten(
@@ -1254,16 +1368,31 @@ function getAllDiBpmnReferences(definitionsNode) {
   );
 }
 
+/**
+ * @param { ModdleElement } element
+ *
+ * @return {boolean}
+ */
 function hasVisualRepresentation(element) {
   const noVisRepresentation = [ 'bpmn:DataObject' ];
 
   return noVisRepresentation.includes(element.$type) ? false : true;
 }
 
+/**
+ * @param { ModdleElement } element
+ *
+ * @return {boolean}
+ */
 function hasFlowElements(element) {
   return element.flowElements ? true : false;
 }
 
+/**
+ * @param { ModdleElement } element
+ *
+ * @return {boolean}
+ */
 function hasChildLaneSet(element) {
   return element.childLaneSet ? true : false;
 }
@@ -1279,7 +1408,7 @@ function hasChildLaneSet(element) {
 
 const disallowNodeType = (__webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js").disallowNodeType);
 
-module.exports = disallowNodeType('bpmn:ComplexGateway');
+module.exports = disallowNodeType('bpmn:ComplexGateway', 'no-complex-gateway');
 
 /***/ }),
 
@@ -1294,11 +1423,16 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that verifies that there exists no disconnected
- * flow elements, i.e. elements without incoming
- * _or_ outgoing sequence flows
+ * flow elements, i.e. elements without incoming or outgoing sequence flows.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1328,9 +1462,9 @@ module.exports = function() {
     }
   }
 
-  return {
+  return annotateRule('no-disconnected', {
     check
-  };
+  });
 };
 
 
@@ -1375,10 +1509,16 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
+
 /**
  * A rule that verifies that there are no disconnected
- * flow elements, i.e. elements without incoming
- * _or_ outgoing sequence flows
+ * flow elements, i.e. elements without incoming or outgoing sequence flows.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1417,9 +1557,9 @@ module.exports = function() {
     }
   }
 
-  return {
+  return annotateRule('no-duplicate-sequence-flows', {
     check
-  };
+  });
 
 };
 
@@ -1448,10 +1588,16 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that checks, whether a gateway forks and joins
  * at the same time.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1469,9 +1615,9 @@ module.exports = function() {
     }
   }
 
-  return {
+  return annotateRule('no-gateway-fork-join', {
     check
-  };
+  });
 
 };
 
@@ -1489,11 +1635,15 @@ const {
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
 const {
-  findParent
+  findParent,
+  annotateRule
 } = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that checks that an element is not an implicit end (token sink).
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1570,7 +1720,9 @@ module.exports = function() {
     }
   }
 
-  return { check };
+  return annotateRule('no-implicit-end', {
+    check
+  });
 };
 
 /***/ }),
@@ -1585,13 +1737,19 @@ const {
   isAny
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that checks that no implicit split is modeled
  * starting from a task.
  *
- * users should model the parallel splitting gateway
+ * Users should model the parallel splitting gateway
  * explicitly instead.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1615,9 +1773,9 @@ module.exports = function() {
     }
   }
 
-  return {
+  return annotateRule('no-implicit-split', {
     check
-  };
+  });
 
 };
 
@@ -1645,9 +1803,14 @@ const {
   isAny
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
 
 /**
  * A rule that checks that an element is not an implicit start (token spawn).
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1692,7 +1855,9 @@ module.exports = function() {
     }
   }
 
-  return { check };
+  return annotateRule('no-implicit-start', {
+    check
+  });
 };
 
 
@@ -1706,7 +1871,7 @@ module.exports = function() {
 
 const disallowNodeType = (__webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js").disallowNodeType);
 
-module.exports = disallowNodeType('bpmn:InclusiveGateway');
+module.exports = disallowNodeType('bpmn:InclusiveGateway', 'no-inclusive-gateway');
 
 /***/ }),
 
@@ -1720,11 +1885,18 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * Rule that checks if two elements overlap except:
+ *
  * - Boundary events overlap their host
  * - Child elements overlap / are on top of their parent (e.g., elements within a subProcess)
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1762,9 +1934,9 @@ module.exports = function() {
     elementsOutsideToReport.forEach(element => reporter.report(element.id, 'Element is outside of parent boundary'));
   }
 
-  return {
-    check: check
-  };
+  return annotateRule('no-overlapping-elements', {
+    check
+  });
 };
 
 // helpers /////////////////
@@ -1919,9 +2091,16 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
+
 /**
  * A rule that checks whether not more than one blank start event
  * exists per scope.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1951,9 +2130,9 @@ module.exports = function() {
     }
   }
 
-  return {
+  return annotateRule('single-blank-start-event', {
     check
-  };
+  });
 
 };
 
@@ -1969,9 +2148,15 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that verifies that an event contains maximum one event definition.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -1988,9 +2173,9 @@ module.exports = function() {
     }
   }
 
-  return {
+  return annotateRule('single-event-definition', {
     check
-  };
+  });
 
 };
 
@@ -2007,9 +2192,15 @@ const {
   isAny
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that checks for the presence of a start event per scope.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -2037,7 +2228,9 @@ module.exports = function() {
     }
   }
 
-  return { check };
+  return annotateRule('start-event-required', {
+    check
+  });
 };
 
 
@@ -2053,10 +2246,16 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that checks that start events inside a normal sub-processes
  * are blank (do not have an event definition).
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -2082,9 +2281,9 @@ module.exports = function() {
     });
   }
 
-  return {
+  return annotateRule('sub-process-blank-start-event', {
     check
-  };
+  });
 
 };
 
@@ -2100,10 +2299,17 @@ const {
   is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
+
 /**
  * A rule that checks, whether a gateway has only one source and target.
  *
  * Those gateways are superfluous since they don't do anything.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -2121,9 +2327,9 @@ module.exports = function() {
     }
   }
 
-  return {
+  return annotateRule('superfluous-gateway', {
     check
-  };
+  });
 
 };
 
@@ -2136,13 +2342,21 @@ module.exports = function() {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 const {
-  is, isAny
+  is,
+  isAny
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
+
+const {
+  annotateRule
+} = __webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js");
+
 
 /**
  * A rule that checks, whether a gateway has only one source and target.
  *
  * Those gateways are superfluous since they don't do anything.
+ *
+ * @type { import('../lib/types.js').RuleFactory }
  */
 module.exports = function() {
 
@@ -2179,9 +2393,9 @@ module.exports = function() {
     }
   }
 
-  return {
+  return annotateRule('superfluous-termination', {
     check
-  };
+  });
 
 };
 
