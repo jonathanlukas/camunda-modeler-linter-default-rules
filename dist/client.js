@@ -942,7 +942,7 @@ const {
  *
  * @return { RuleFactory } ruleFactory
  */
-function disallowNodeType(type, ruleName) {
+function checkDiscouragedNodeType(type, ruleName) {
 
   /**
    * @type { RuleFactory }
@@ -952,7 +952,7 @@ function disallowNodeType(type, ruleName) {
     function check(node, reporter) {
 
       if (is(node, type)) {
-        reporter.report(node.id, 'Element has disallowed type <' + type + '>');
+        reporter.report(node.id, 'Element type <' + type + '> is discouraged');
       }
     }
 
@@ -964,7 +964,7 @@ function disallowNodeType(type, ruleName) {
 
 }
 
-module.exports.disallowNodeType = disallowNodeType;
+module.exports.checkDiscouragedNodeType = checkDiscouragedNodeType;
 
 
 /**
@@ -1406,9 +1406,9 @@ function hasChildLaneSet(element) {
   \***********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-const disallowNodeType = (__webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js").disallowNodeType);
+const checkDiscouragedNodeType = (__webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js").checkDiscouragedNodeType);
 
-module.exports = disallowNodeType('bpmn:ComplexGateway', 'no-complex-gateway');
+module.exports = checkDiscouragedNodeType('bpmn:ComplexGateway', 'no-complex-gateway');
 
 /***/ }),
 
@@ -1869,9 +1869,9 @@ module.exports = function() {
   \*************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-const disallowNodeType = (__webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js").disallowNodeType);
+const checkDiscouragedNodeType = (__webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js").checkDiscouragedNodeType);
 
-module.exports = disallowNodeType('bpmn:InclusiveGateway', 'no-inclusive-gateway');
+module.exports = checkDiscouragedNodeType('bpmn:InclusiveGateway', 'no-inclusive-gateway');
 
 /***/ }),
 
