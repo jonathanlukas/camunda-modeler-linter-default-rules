@@ -640,7 +640,7 @@ module.exports = function() {
     if (!isAny(node, [
       'bpmn:Process',
       'bpmn:SubProcess'
-    ])) {
+    ]) || is(node, 'bpmn:AdHocSubProcess')) {
       return;
     }
 
@@ -1162,12 +1162,12 @@ module.exports = function() {
     const links = (node.flowElements || []).filter(isLinkEvent);
 
     for (const link of links) {
-      if (!link.name) {
-        reporter.report(link.id, 'Link event is missing name');
+      if (!getLinkName(link)) {
+        reporter.report(link.id, 'Link event is missing link name');
       }
     }
 
-    const names = groupBy(links, (link) => link.name);
+    const names = groupBy(links, link => getLinkName(link));
 
     for (const [ name, events ] of Object.entries(names)) {
 
@@ -1180,22 +1180,20 @@ module.exports = function() {
       if (events.length === 1) {
         const event = events[0];
 
-        reporter.report(event.id, `Link ${isThrowEvent(event) ? 'catch' : 'throw' } event with name <${ name }> missing in scope`);
-      }
-
-      const throwEvents = events.filter(isThrowEvent);
-
-      if (throwEvents.length > 1) {
-        for (const event of throwEvents) {
-          reporter.report(event.id, `Duplicate link throw event with name <${name}> in scope`);
-        }
+        reporter.report(event.id, `Link ${isThrowEvent(event) ? 'catch' : 'throw' } event with link name <${ name }> missing in scope`);
+        continue;
       }
 
       const catchEvents = events.filter(isCatchEvent);
-
       if (catchEvents.length > 1) {
         for (const event of catchEvents) {
-          reporter.report(event.id, `Duplicate link catch event with name <${name}> in scope`);
+          reporter.report(event.id, `Duplicate link catch event with link name <${name}> in scope`);
+        }
+      } else if (catchEvents.length === 0) {
+
+        // all events in scope are throw events
+        for (const event of events) {
+          reporter.report(event.id, `Link catch event with link name <${ name }> missing in scope`);
         }
       }
     }
@@ -1221,6 +1219,10 @@ function isLinkEvent(node) {
   return eventDefinitions.some(
     definition => is(definition, 'bpmn:LinkEventDefinition')
   );
+}
+
+function getLinkName(linkEvent) {
+  return linkEvent.get('eventDefinitions').find(def => is(def, 'bpmn:LinkEventDefinition')).name;
 }
 
 function isThrowEvent(node) {
@@ -2217,7 +2219,7 @@ module.exports = function() {
     if (!isAny(node, [
       'bpmn:Process',
       'bpmn:SubProcess'
-    ])) {
+    ]) || is(node, 'bpmn:AdHocSubProcess')) {
       return;
     }
 
