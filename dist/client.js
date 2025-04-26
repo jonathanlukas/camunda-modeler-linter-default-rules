@@ -1456,6 +1456,11 @@ module.exports = function() {
       return;
     }
 
+    // adhoc subprocesses can have disconnected activities
+    if (is(node.$parent, 'bpmn:AdHocSubProcess')) {
+      return;
+    }
+
     const incoming = node.incoming || [];
     const outgoing = node.outgoing || [];
 
@@ -1696,6 +1701,10 @@ module.exports = function() {
       return false;
     }
 
+    if (is(node.$parent, 'bpmn:AdHocSubProcess')) {
+      return false;
+    }
+
     if (is(node, 'bpmn:EndEvent')) {
       return false;
     }
@@ -1828,6 +1837,10 @@ module.exports = function() {
     const incoming = node.incoming || [];
 
     if (is(node, 'bpmn:Activity') && node.isForCompensation) {
+      return false;
+    }
+
+    if (is(node.$parent, 'bpmn:AdHocSubProcess')) {
       return false;
     }
 
