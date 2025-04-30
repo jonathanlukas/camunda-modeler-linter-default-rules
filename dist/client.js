@@ -483,8 +483,7 @@ function isAny(node, types) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 const {
-  is,
-  isAny
+  is
 } = __webpack_require__(/*! bpmnlint-utils */ "./node_modules/bpmnlint-utils/dist/index.esm.js");
 
 const {
@@ -520,9 +519,9 @@ module.exports = function() {
         reporter.report(flowElement.id, 'An <End Event> is not allowed in <Ad Hoc Sub Process>');
       }
 
-      if (isAny(flowElement, [ 'bpmn:IntermediateCatchEvent', 'bpmn:IntermediateThrowEvent' ])) {
+      if (is(flowElement, 'bpmn:IntermediateCatchEvent')) {
         if (!flowElement.outgoing || flowElement.outgoing.length === 0) {
-          reporter.report(flowElement.id, 'An intermediate event inside <Ad Hoc Sub Process> must have an outgoing sequence flow');
+          reporter.report(flowElement.id, 'An intermediate catch event inside <Ad Hoc Sub Process> must have an outgoing sequence flow');
         }
       }
 
@@ -534,6 +533,7 @@ module.exports = function() {
   });
 
 };
+
 
 /***/ }),
 
