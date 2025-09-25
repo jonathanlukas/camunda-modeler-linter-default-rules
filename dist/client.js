@@ -518,13 +518,6 @@ module.exports = function() {
       if (is(flowElement, 'bpmn:EndEvent')) {
         reporter.report(flowElement.id, 'An <End Event> is not allowed in <Ad Hoc Sub Process>');
       }
-
-      if (is(flowElement, 'bpmn:IntermediateCatchEvent')) {
-        if (!flowElement.outgoing || flowElement.outgoing.length === 0) {
-          reporter.report(flowElement.id, 'An intermediate catch event inside <Ad Hoc Sub Process> must have an outgoing sequence flow');
-        }
-      }
-
     });
   }
 
@@ -1622,7 +1615,7 @@ module.exports = function() {
     }
   }
 
-  return annotateRule('no-gateway-fork-join', {
+  return annotateRule('no-gateway-join-fork', {
     check
   });
 
