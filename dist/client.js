@@ -1767,7 +1767,7 @@ module.exports = function() {
       return false;
     }
 
-    if (is(node, 'bpmn:Task') && isForCompensation(node)) {
+    if (is(node, 'bpmn:Activity') && isForCompensation(node)) {
       return false;
     }
 
@@ -1887,10 +1887,14 @@ module.exports = function() {
     );
   }
 
+  function isForCompensation(node) {
+    return node.isForCompensation;
+  }
+
   function isImplicitStart(node) {
     const incoming = node.incoming || [];
 
-    if (is(node, 'bpmn:Activity') && node.isForCompensation) {
+    if (is(node, 'bpmn:Activity') && isForCompensation(node)) {
       return false;
     }
 
