@@ -21,7 +21,7 @@
   "author": "Jonathan Lukas",
   "license": "MIT",
   "devDependencies": {
-    "bpmnlint": "^11.7.2",
+    "bpmnlint": "^11.7.3",
     "bpmnlint-loader": "^0.1.6",
     "bpmnlint-plugin-camunda": "^0.6.1",
     "camunda-modeler-plugin-helpers": "^6.0.0",
