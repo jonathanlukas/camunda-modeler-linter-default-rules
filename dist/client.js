@@ -12,6 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   config: () => (/* binding */ config),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   moddleExtensions: () => (/* binding */ moddleExtensions),
 /* harmony export */   resolver: () => (/* binding */ resolver)
 /* harmony export */ });
 /* harmony import */ var bpmnlint_rules_ad_hoc_sub_process__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bpmnlint/rules/ad-hoc-sub-process */ "./node_modules/bpmnlint/rules/ad-hoc-sub-process.js");
@@ -135,9 +136,12 @@ const config = {
   rules: rules
 };
 
+const moddleExtensions = {};
+
 const bundle = {
   resolver: resolver,
-  config: config
+  config: config,
+  moddleExtensions: moddleExtensions
 };
 
 
@@ -255,6 +259,7 @@ cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_r
 
 
 cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_27___default());
+
 
 /***/ },
 
@@ -449,7 +454,6 @@ const {
  * A rule that ensures that an Ad Hoc Sub Process is valid according to the BPMN spec:
  *
  * - No start or end events
- * - Every intermediate event has an outgoing sequence flow
  *
  * @type { import('../lib/types.js').RuleFactory }
  */
@@ -997,6 +1001,22 @@ function findParent(node, type) {
 module.exports.findParent = findParent;
 
 
+/**
+ * Check if the node is inside of an executable process.
+ *
+ * @param { ModdleElement } node
+ *
+ * @return { boolean }
+ */
+function isInExecutableProcess(node) {
+  const process = findParent(node, 'bpmn:Process');
+
+  return process && process.isExecutable;
+}
+
+module.exports.isInExecutableProcess = isInExecutableProcess;
+
+
 const documentationBaseUrl = 'https://github.com/bpmn-io/bpmnlint/blob/main/docs/rules';
 
 /**
@@ -1128,7 +1148,7 @@ function hasCondition(node) {
 
 const {
   groupBy
-} = __webpack_require__(/*! min-dash */ "./node_modules/min-dash/dist/index.cjs");
+} = __webpack_require__(/*! min-dash */ "./node_modules/min-dash/dist/index.js");
 
 const {
   is
@@ -1248,7 +1268,7 @@ const {
 
 const {
   flatten
-} = __webpack_require__(/*! min-dash */ "./node_modules/min-dash/dist/index.cjs");
+} = __webpack_require__(/*! min-dash */ "./node_modules/min-dash/dist/index.js");
 
 const {
   annotateRule
@@ -2818,15 +2838,106 @@ function getPluginsDirectory() {
 
 /***/ },
 
-/***/ "./node_modules/min-dash/dist/index.cjs"
-/*!**********************************************!*\
-  !*** ./node_modules/min-dash/dist/index.cjs ***!
-  \**********************************************/
-(__unused_webpack_module, exports) {
+/***/ "./node_modules/bpmnlint-utils/dist/index.esm.js"
+/*!*******************************************************!*\
+  !*** ./node_modules/bpmnlint-utils/dist/index.esm.js ***!
+  \*******************************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   is: () => (/* binding */ is),
+/* harmony export */   isAny: () => (/* binding */ isAny)
+/* harmony export */ });
+/**
+ * Checks whether node is of specific bpmn type.
+ *
+ * @param {ModdleElement} node
+ * @param {String} type
+ *
+ * @return {Boolean}
+ */
+function is(node, type) {
+
+  if (type.indexOf(':') === -1) {
+    type = 'bpmn:' + type;
+  }
+
+  return (
+    (typeof node.$instanceOf === 'function')
+      ? node.$instanceOf(type)
+      : node.$type === type
+  );
+}
+
+/**
+ * Checks whether node has any of the specified types.
+ *
+ * @param {ModdleElement} node
+ * @param {Array<String>} types
+ *
+ * @return {Boolean}
+ */
+function isAny(node, types) {
+  return types.some(function(type) {
+    return is(node, type);
+  });
+}
 
 
+//# sourceMappingURL=index.esm.js.map
+
+
+/***/ },
+
+/***/ "./node_modules/min-dash/dist/index.js"
+/*!*********************************************!*\
+  !*** ./node_modules/min-dash/dist/index.js ***!
+  \*********************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assign: () => (/* binding */ assign),
+/* harmony export */   bind: () => (/* binding */ bind),
+/* harmony export */   debounce: () => (/* binding */ debounce),
+/* harmony export */   ensureArray: () => (/* binding */ ensureArray),
+/* harmony export */   every: () => (/* binding */ every),
+/* harmony export */   filter: () => (/* binding */ filter),
+/* harmony export */   find: () => (/* binding */ find),
+/* harmony export */   findIndex: () => (/* binding */ findIndex),
+/* harmony export */   flatten: () => (/* binding */ flatten),
+/* harmony export */   forEach: () => (/* binding */ forEach),
+/* harmony export */   get: () => (/* binding */ get),
+/* harmony export */   groupBy: () => (/* binding */ groupBy),
+/* harmony export */   has: () => (/* binding */ has),
+/* harmony export */   isArray: () => (/* binding */ isArray),
+/* harmony export */   isDefined: () => (/* binding */ isDefined),
+/* harmony export */   isFunction: () => (/* binding */ isFunction),
+/* harmony export */   isNil: () => (/* binding */ isNil),
+/* harmony export */   isNumber: () => (/* binding */ isNumber),
+/* harmony export */   isObject: () => (/* binding */ isObject),
+/* harmony export */   isString: () => (/* binding */ isString),
+/* harmony export */   isUndefined: () => (/* binding */ isUndefined),
+/* harmony export */   keys: () => (/* binding */ keys),
+/* harmony export */   map: () => (/* binding */ map),
+/* harmony export */   matchPattern: () => (/* binding */ matchPattern),
+/* harmony export */   merge: () => (/* binding */ merge),
+/* harmony export */   omit: () => (/* binding */ omit),
+/* harmony export */   pick: () => (/* binding */ pick),
+/* harmony export */   reduce: () => (/* binding */ reduce),
+/* harmony export */   set: () => (/* binding */ set),
+/* harmony export */   size: () => (/* binding */ size),
+/* harmony export */   some: () => (/* binding */ some),
+/* harmony export */   sortBy: () => (/* binding */ sortBy),
+/* harmony export */   throttle: () => (/* binding */ throttle),
+/* harmony export */   unionBy: () => (/* binding */ unionBy),
+/* harmony export */   uniqueBy: () => (/* binding */ uniqueBy),
+/* harmony export */   values: () => (/* binding */ values),
+/* harmony export */   without: () => (/* binding */ without)
+/* harmony export */ });
 /**
  * Flatten array, one level deep.
  *
@@ -3375,8 +3486,6 @@ function toNum(arg) {
   return Number(arg);
 }
 
-/* global setTimeout clearTimeout */
-
 /**
  * @typedef { {
  *   (...args: any[]): any;
@@ -3698,96 +3807,7 @@ function merge(target, ...sources) {
   return target;
 }
 
-exports.assign = assign;
-exports.bind = bind;
-exports.debounce = debounce;
-exports.ensureArray = ensureArray;
-exports.every = every;
-exports.filter = filter;
-exports.find = find;
-exports.findIndex = findIndex;
-exports.flatten = flatten;
-exports.forEach = forEach;
-exports.get = get;
-exports.groupBy = groupBy;
-exports.has = has;
-exports.isArray = isArray;
-exports.isDefined = isDefined;
-exports.isFunction = isFunction;
-exports.isNil = isNil;
-exports.isNumber = isNumber;
-exports.isObject = isObject;
-exports.isString = isString;
-exports.isUndefined = isUndefined;
-exports.keys = keys;
-exports.map = map;
-exports.matchPattern = matchPattern;
-exports.merge = merge;
-exports.omit = omit;
-exports.pick = pick;
-exports.reduce = reduce;
-exports.set = set;
-exports.size = size;
-exports.some = some;
-exports.sortBy = sortBy;
-exports.throttle = throttle;
-exports.unionBy = unionBy;
-exports.uniqueBy = uniqueBy;
-exports.values = values;
-exports.without = without;
 
-
-/***/ },
-
-/***/ "./node_modules/bpmnlint-utils/dist/index.esm.js"
-/*!*******************************************************!*\
-  !*** ./node_modules/bpmnlint-utils/dist/index.esm.js ***!
-  \*******************************************************/
-(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   is: () => (/* binding */ is),
-/* harmony export */   isAny: () => (/* binding */ isAny)
-/* harmony export */ });
-/**
- * Checks whether node is of specific bpmn type.
- *
- * @param {ModdleElement} node
- * @param {String} type
- *
- * @return {Boolean}
- */
-function is(node, type) {
-
-  if (type.indexOf(':') === -1) {
-    type = 'bpmn:' + type;
-  }
-
-  return (
-    (typeof node.$instanceOf === 'function')
-      ? node.$instanceOf(type)
-      : node.$type === type
-  );
-}
-
-/**
- * Checks whether node has any of the specified types.
- *
- * @param {ModdleElement} node
- * @param {Array<String>} types
- *
- * @return {Boolean}
- */
-function isAny(node, types) {
-  return types.some(function(type) {
-    return is(node, type);
-  });
-}
-
-
-//# sourceMappingURL=index.esm.js.map
 
 
 /***/ }
