@@ -430,59 +430,6 @@ function hasAttribute(bpmnElement, attribute) {
 
 /***/ },
 
-/***/ "./node_modules/bpmnlint-utils/dist/index.esm.js"
-/*!*******************************************************!*\
-  !*** ./node_modules/bpmnlint-utils/dist/index.esm.js ***!
-  \*******************************************************/
-(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   is: () => (/* binding */ is),
-/* harmony export */   isAny: () => (/* binding */ isAny)
-/* harmony export */ });
-/**
- * Checks whether node is of specific bpmn type.
- *
- * @param {ModdleElement} node
- * @param {String} type
- *
- * @return {Boolean}
- */
-function is(node, type) {
-
-  if (type.indexOf(':') === -1) {
-    type = 'bpmn:' + type;
-  }
-
-  return (
-    (typeof node.$instanceOf === 'function')
-      ? node.$instanceOf(type)
-      : node.$type === type
-  );
-}
-
-/**
- * Checks whether node has any of the specified types.
- *
- * @param {ModdleElement} node
- * @param {Array<String>} types
- *
- * @return {Boolean}
- */
-function isAny(node, types) {
-  return types.some(function(type) {
-    return is(node, type);
-  });
-}
-
-
-//# sourceMappingURL=index.esm.js.map
-
-
-/***/ },
-
 /***/ "./node_modules/bpmnlint/rules/ad-hoc-sub-process.js"
 /*!***********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/ad-hoc-sub-process.js ***!
@@ -3788,6 +3735,59 @@ exports.unionBy = unionBy;
 exports.uniqueBy = uniqueBy;
 exports.values = values;
 exports.without = without;
+
+
+/***/ },
+
+/***/ "./node_modules/bpmnlint-utils/dist/index.esm.js"
+/*!*******************************************************!*\
+  !*** ./node_modules/bpmnlint-utils/dist/index.esm.js ***!
+  \*******************************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   is: () => (/* binding */ is),
+/* harmony export */   isAny: () => (/* binding */ isAny)
+/* harmony export */ });
+/**
+ * Checks whether node is of specific bpmn type.
+ *
+ * @param {ModdleElement} node
+ * @param {String} type
+ *
+ * @return {Boolean}
+ */
+function is(node, type) {
+
+  if (type.indexOf(':') === -1) {
+    type = 'bpmn:' + type;
+  }
+
+  return (
+    (typeof node.$instanceOf === 'function')
+      ? node.$instanceOf(type)
+      : node.$type === type
+  );
+}
+
+/**
+ * Checks whether node has any of the specified types.
+ *
+ * @param {ModdleElement} node
+ * @param {Array<String>} types
+ *
+ * @return {Boolean}
+ */
+function isAny(node, types) {
+  return types.some(function(type) {
+    return is(node, type);
+  });
+}
+
+
+//# sourceMappingURL=index.esm.js.map
 
 
 /***/ }
