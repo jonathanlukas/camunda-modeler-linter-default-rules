@@ -1,11 +1,11 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./.bpmnlintrc":
+/***/ "./.bpmnlintrc"
 /*!*********************!*\
   !*** ./.bpmnlintrc ***!
   \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -256,13 +256,13 @@ cache['bpmnlint-plugin-camunda/forking-conditions'] = (bpmnlint_plugin_camunda_r
 
 cache['bpmnlint-plugin-camunda/implementation'] = (bpmnlint_plugin_camunda_rules_implementation__WEBPACK_IMPORTED_MODULE_27___default());
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js":
+/***/ "./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js"
 /*!*******************************************************************!*\
   !*** ./node_modules/bpmnlint-plugin-camunda/rules/avoid-lanes.js ***!
   \*******************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -286,13 +286,13 @@ module.exports = function() {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js":
+/***/ "./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js"
 /*!**************************************************************************!*\
   !*** ./node_modules/bpmnlint-plugin-camunda/rules/forking-conditions.js ***!
   \**************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -342,13 +342,13 @@ function isDefaultFlow(node, flow) {
   return node['default'] === flow;
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js":
+/***/ "./node_modules/bpmnlint-plugin-camunda/rules/implementation.js"
 /*!**********************************************************************!*\
   !*** ./node_modules/bpmnlint-plugin-camunda/rules/implementation.js ***!
   \**********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -428,13 +428,13 @@ function hasAttribute(bpmnElement, attribute) {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint-utils/dist/index.esm.js":
+/***/ "./node_modules/bpmnlint-utils/dist/index.esm.js"
 /*!*******************************************************!*\
   !*** ./node_modules/bpmnlint-utils/dist/index.esm.js ***!
   \*******************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -481,13 +481,13 @@ function isAny(node, types) {
 //# sourceMappingURL=index.esm.js.map
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/ad-hoc-sub-process.js":
+/***/ "./node_modules/bpmnlint/rules/ad-hoc-sub-process.js"
 /*!***********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/ad-hoc-sub-process.js ***!
   \***********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -535,13 +535,13 @@ module.exports = function() {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/conditional-flows.js":
+/***/ "./node_modules/bpmnlint/rules/conditional-flows.js"
 /*!**********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/conditional-flows.js ***!
   \**********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   annotateRule
@@ -602,13 +602,13 @@ function isDefaultFlow(node, flow) {
   return node['default'] === flow;
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/end-event-required.js":
+/***/ "./node_modules/bpmnlint/rules/end-event-required.js"
 /*!***********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/end-event-required.js ***!
   \***********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is,
@@ -657,13 +657,13 @@ module.exports = function() {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/event-based-gateway.js":
+/***/ "./node_modules/bpmnlint/rules/event-based-gateway.js"
 /*!************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/event-based-gateway.js ***!
   \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -711,13 +711,13 @@ function hasCondition(flow) {
   return !!flow.conditionExpression;
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/event-sub-process-typed-start-event.js":
+/***/ "./node_modules/bpmnlint/rules/event-sub-process-typed-start-event.js"
 /*!****************************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/event-sub-process-typed-start-event.js ***!
   \****************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -764,13 +764,13 @@ module.exports = function() {
 
 };
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/fake-join.js":
+/***/ "./node_modules/bpmnlint/rules/fake-join.js"
 /*!**************************************************!*\
   !*** ./node_modules/bpmnlint/rules/fake-join.js ***!
   \**************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   isAny
@@ -814,13 +814,13 @@ module.exports = function() {
 
 };
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/global.js":
+/***/ "./node_modules/bpmnlint/rules/global.js"
 /*!***********************************************!*\
   !*** ./node_modules/bpmnlint/rules/global.js ***!
   \***********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is,
@@ -969,13 +969,13 @@ module.exports = function() {
   }
 };
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/helper.js":
+/***/ "./node_modules/bpmnlint/rules/helper.js"
 /*!***********************************************!*\
   !*** ./node_modules/bpmnlint/rules/helper.js ***!
   \***********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -1086,13 +1086,13 @@ function annotateRule(ruleName, options) {
 
 module.exports.annotateRule = annotateRule;
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/label-required.js":
+/***/ "./node_modules/bpmnlint/rules/label-required.js"
 /*!*******************************************************!*\
   !*** ./node_modules/bpmnlint/rules/label-required.js ***!
   \*******************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is,
@@ -1171,13 +1171,13 @@ function hasCondition(node) {
   return node.conditionExpression;
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/link-event.js":
+/***/ "./node_modules/bpmnlint/rules/link-event.js"
 /*!***************************************************!*\
   !*** ./node_modules/bpmnlint/rules/link-event.js ***!
   \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   groupBy
@@ -1287,13 +1287,13 @@ function isCatchEvent(node) {
   return is(node, 'bpmn:CatchEvent');
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-bpmndi.js":
+/***/ "./node_modules/bpmnlint/rules/no-bpmndi.js"
 /*!**************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-bpmndi.js ***!
   \**************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -1454,25 +1454,25 @@ function hasChildLaneSet(element) {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-complex-gateway.js":
+/***/ "./node_modules/bpmnlint/rules/no-complex-gateway.js"
 /*!***********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-complex-gateway.js ***!
   \***********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const checkDiscouragedNodeType = (__webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js").checkDiscouragedNodeType);
 
 module.exports = checkDiscouragedNodeType('bpmn:ComplexGateway', 'no-complex-gateway');
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-disconnected.js":
+/***/ "./node_modules/bpmnlint/rules/no-disconnected.js"
 /*!********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-disconnected.js ***!
   \********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   isAny,
@@ -1558,13 +1558,13 @@ function isCompensationLinked(node) {
   return source || target;
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-duplicate-sequence-flows.js":
+/***/ "./node_modules/bpmnlint/rules/no-duplicate-sequence-flows.js"
 /*!********************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-duplicate-sequence-flows.js ***!
   \********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -1637,13 +1637,13 @@ function flowKey(flow) {
   return source + '#' + target + '#' + condition;
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-gateway-join-fork.js":
+/***/ "./node_modules/bpmnlint/rules/no-gateway-join-fork.js"
 /*!*************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-gateway-join-fork.js ***!
   \*************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -1682,13 +1682,13 @@ module.exports = function() {
 
 };
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-implicit-end.js":
+/***/ "./node_modules/bpmnlint/rules/no-implicit-end.js"
 /*!********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-implicit-end.js ***!
   \********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is,
@@ -1790,13 +1790,13 @@ module.exports = function() {
   });
 };
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-implicit-split.js":
+/***/ "./node_modules/bpmnlint/rules/no-implicit-split.js"
 /*!**********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-implicit-split.js ***!
   \**********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   isAny
@@ -1855,13 +1855,13 @@ function isDefaultFlow(node, flow) {
   return node['default'] === flow;
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-implicit-start.js":
+/***/ "./node_modules/bpmnlint/rules/no-implicit-start.js"
 /*!**********************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-implicit-start.js ***!
   \**********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is,
@@ -1934,25 +1934,25 @@ module.exports = function() {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-inclusive-gateway.js":
+/***/ "./node_modules/bpmnlint/rules/no-inclusive-gateway.js"
 /*!*************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-inclusive-gateway.js ***!
   \*************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const checkDiscouragedNodeType = (__webpack_require__(/*! ./helper */ "./node_modules/bpmnlint/rules/helper.js").checkDiscouragedNodeType);
 
 module.exports = checkDiscouragedNodeType('bpmn:InclusiveGateway', 'no-inclusive-gateway');
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/no-overlapping-elements.js":
+/***/ "./node_modules/bpmnlint/rules/no-overlapping-elements.js"
 /*!****************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/no-overlapping-elements.js ***!
   \****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -2152,13 +2152,13 @@ function getAllDiObjects(node) {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/single-blank-start-event.js":
+/***/ "./node_modules/bpmnlint/rules/single-blank-start-event.js"
 /*!*****************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/single-blank-start-event.js ***!
   \*****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -2209,13 +2209,13 @@ module.exports = function() {
 
 };
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/single-event-definition.js":
+/***/ "./node_modules/bpmnlint/rules/single-event-definition.js"
 /*!****************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/single-event-definition.js ***!
   \****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -2252,13 +2252,13 @@ module.exports = function() {
 
 };
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/start-event-required.js":
+/***/ "./node_modules/bpmnlint/rules/start-event-required.js"
 /*!*************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/start-event-required.js ***!
   \*************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is,
@@ -2307,13 +2307,13 @@ module.exports = function() {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/sub-process-blank-start-event.js":
+/***/ "./node_modules/bpmnlint/rules/sub-process-blank-start-event.js"
 /*!**********************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/sub-process-blank-start-event.js ***!
   \**********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -2360,13 +2360,13 @@ module.exports = function() {
 
 };
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/superfluous-gateway.js":
+/***/ "./node_modules/bpmnlint/rules/superfluous-gateway.js"
 /*!************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/superfluous-gateway.js ***!
   \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is
@@ -2406,13 +2406,13 @@ module.exports = function() {
 
 };
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/bpmnlint/rules/superfluous-termination.js":
+/***/ "./node_modules/bpmnlint/rules/superfluous-termination.js"
 /*!****************************************************************!*\
   !*** ./node_modules/bpmnlint/rules/superfluous-termination.js ***!
   \****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+(module, __unused_webpack_exports, __webpack_require__) {
 
 const {
   is,
@@ -2486,13 +2486,13 @@ function isInterruptingEventSub(element) {
   );
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/camunda-modeler-plugin-helpers/index.js":
+/***/ "./node_modules/camunda-modeler-plugin-helpers/index.js"
 /*!**************************************************************!*\
   !*** ./node_modules/camunda-modeler-plugin-helpers/index.js ***!
   \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -2869,13 +2869,13 @@ function getPluginsDirectory() {
   return window.getPluginsDirectory();
 }
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/min-dash/dist/index.cjs":
+/***/ "./node_modules/min-dash/dist/index.cjs"
 /*!**********************************************!*\
   !*** ./node_modules/min-dash/dist/index.cjs ***!
   \**********************************************/
-/***/ ((__unused_webpack_module, exports) => {
+(__unused_webpack_module, exports) {
 
 "use strict";
 
@@ -3790,7 +3790,7 @@ exports.values = values;
 exports.without = without;
 
 
-/***/ })
+/***/ }
 
 /******/ 	});
 /************************************************************************/
@@ -3803,6 +3803,12 @@ exports.without = without;
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Check if module exists (development only)
+/******/ 		if (__webpack_modules__[moduleId] === undefined) {
+/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
